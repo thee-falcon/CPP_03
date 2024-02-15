@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 18:27:48 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/14 17:21:44 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/15 21:31:18 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 class ClapTrap
 {
+
+protected:
     std::string     _name;
     unsigned int    _hitPoints; // represent the health of the ClapTrap
     unsigned int    _energyPoints;
