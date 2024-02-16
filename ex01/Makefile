@@ -6,11 +6,11 @@
 #    By: omakran <omakran@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/12 18:27:58 by omakran           #+#    #+#              #
-#    Updated: 2024/02/15 19:25:58 by omakran          ###   ########.fr        #
+#    Updated: 2024/02/16 15:48:45 by omakran          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-EXEC = Fixed
+EXEC = ScavTrap
 
 SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 

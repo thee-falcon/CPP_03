@@ -6,18 +6,21 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 18:27:55 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/15 16:57:25 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/16 18:17:12 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main() {
-    ClapTrap claptrap("OMAKRAN");
-    // Using the copy constructor
-    ClapTrap claptrapCopy(claptrap);
-    claptrap.attack("Target 1");
-    claptrap.takeDamage(3);
-    claptrap.beRepaired(2);
+    // create a ScavTrap
+    ScavTrap    scavtrap("SCAV-TRAP");
+    ScavTrap    scavtrapcopy(scavtrap); 
+
+    scavtrap.attack("Traget 1");
+    scavtrap.takeDamage(3);
+    scavtrap.beRepaired(10);
+    scavtrap.guardGate();
+    
     return (0);
 }
