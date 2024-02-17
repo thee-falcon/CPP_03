@@ -6,7 +6,7 @@
 /*   By: omakran <omakran@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 19:25:46 by omakran           #+#    #+#             */
-/*   Updated: 2024/02/16 18:18:45 by omakran          ###   ########.fr       */
+/*   Updated: 2024/02/17 16:02:25 by omakran          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,21 @@ ScavTrap::ScavTrap( const std::string& name ) : ClapTrap( name ) {
 // destructor definition
 ScavTrap::~ScavTrap() {
     std::cout << "ScavTrap " << this->_name << " destructor is called!" << std::endl;
+}
+
+// Copy constructor definition
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
+    std::cout << "ScavTrap copy constructor called!" << std::endl;
+}
+
+// Copy assignment operator definition
+ScavTrap& ScavTrap::operator=(const ScavTrap& other) {
+    // Avoid self-assignment
+    if (this != &other) {
+        ClapTrap::operator=(other); // Call the base class assignment operator
+        std::cout << "ScavTrap assignment operator called!" << std::endl;
+    }
+    return (*this);
 }
 
 void    ScavTrap::guardGate() {
